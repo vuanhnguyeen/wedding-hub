@@ -1,0 +1,73 @@
+@import "../../styles/common.mixin";
+
+.herosection {
+  width: 100%;
+  height: 100vh; /* Fallback for browsers that do not support Custom Properties */
+  height: calc(var(--vh, 1vh) * 100);
+  position: relative;
+  background-image: url("../../public/hero_mobile.jpg");
+  background-attachment: fixed;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  @include desktop() {
+    background-image: url("../../public/hero.jpg");
+  }
+}
+.ctndate {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding-bottom: 80px;
+  width: calc(100vw - 48px);
+  @include desktop() {
+    width: 100%;
+  }
+}
+
+.savedate {
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  font-family: Alex Brush;
+  font-weight: 400;
+  font-style: normal;
+  padding-top: 30px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  width: 100%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  @include desktop() {
+    width: max-content;
+    font-size: 100px;
+  }
+}
+.name {
+  font-size: 28px;
+  color: #fff;
+  text-align: center;
+  font-family: Lora;
+  font-weight: 400;
+  font-style: italic;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  @include desktop() {
+    font-size: 38px;
+  }
+}
+.date {
+  font-size: 25px;
+  color: #fff;
+  text-align: center;
+  font-family: Roboto;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  @include desktop() {
+    font-size: 35px;
+  }
+}

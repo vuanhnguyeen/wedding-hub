@@ -1,0 +1,125 @@
+@import "../../styles/common.mixin";
+
+.pinksection {
+  width: 100%;
+  height: auto;
+  background-color: #ffdddd85 !important;
+  padding: 24px;
+  position: inherit;
+  @include desktop() {
+    position: relative;
+    height: 420px;
+  }
+}
+.contentadd {
+  position: inherit;
+  top: -170px;
+  left: 50%;
+  transform: none;
+  display: block;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  @include desktop() {
+    position: absolute;
+    width: 1080px;
+    transform: translateX(-50%);
+    display: flex;
+  }
+}
+.blockadd {
+  width: 100%;
+  max-width: 400px;
+  height: 530px;
+  background-image: url("../../public/bg.png");
+  background-position: 0 0;
+  background-repeat: repeat;
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+  text-align: center;
+  position: relative;
+  margin-bottom: 24px;
+  margin-left: auto;
+  margin-right: auto;
+  @include desktop() {
+    width: calc(50% - 200px);
+    margin-bottom: 0;
+  }
+}
+.partytext {
+  font-size: 25px;
+  text-align: center;
+  font-family: Roboto;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  position: relative;
+}
+.partytext::after {
+  content: " ";
+  position: absolute;
+  height: 3px;
+  width: 20%;
+  background-color: #f2492b;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.ctnimg {
+  margin-top: 50px;
+  margin-bottom: 35px;
+  display: flex;
+  justify-content: center;
+}
+.ctnimg_img {
+  width: 235px;
+  height: 235px;
+  background-color: gray;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+}
+.ctnimg_girl {
+  background-image: url("../../public/album/3.jpg");
+  background-position: initial;
+}
+.ctnimg_boy {
+  background-image: url("../../public/album/18.jpg");
+}
+.btnmap {
+  width: calc(100% - 40px);
+  outline: none;
+  border: 2px solid #f2492b;
+  color: #f2492b;
+  background-color: #0000;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 40px;
+  font-weight: bold;
+  transition: all ease 0.2s;
+  position: absolute;
+  left: 20px;
+  bottom: 30px;
+}
+.btnmap:hover {
+  color: #fff;
+  background-color: #f2492b;
+}
+.timing {
+  margin-bottom: 10px;
+  font-family: "comic sans ms", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+.address {
+  font-family: "comic sans ms", sans-serif;
+  font-size: 16px;
+}

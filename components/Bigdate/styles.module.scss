@@ -1,0 +1,58 @@
+@import "../../styles/common.mixin";
+
+.bigdate {
+  width: 100%;
+  height: 100vw;
+  background-image: url("../../public/hero2.jpg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding: 24px;
+  @include desktop() {
+    height: 650px;
+  }
+}
+.content {
+  position: absolute;
+  top: 90px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: #fff;
+  width: calc(100vw - 48px);
+  text-align: center;
+  @include desktop() {
+    width: 50%;
+  }
+}
+.textfirst {
+  font-size: 50px;
+  font-family: Alex Brush;
+  font-weight: 400;
+  font-style: normal;
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+  @include desktop() {
+    font-size: 70px;
+  }
+}
+.textsecond {
+  font-size: 22px;
+  font-family: Dancing Script;
+  font-weight: 400;
+  font-style: normal;
+  margin: 5px 0 12px 0;
+  text-align: center;
+  @include desktop() {
+    font-size: 35px;
+  }
+}
+.textthird {
+  font-family: Vollkorn, sans-serif;
+  font-size: 13px;
+  @include desktop() {
+    font-size: 17px;
+  }
+}
