@@ -7,7 +7,7 @@ import Image from "next/image";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 const domain =
-  "https://script.google.com/macros/s/AKfycbywCFAR5vb3rwlFHRKg1urwUYaqqX6rR1SSW0_eopQgF5ZzloNl12kWj8OVtjbA3uXWdg/exec";
+  "https://script.google.com/macros/s/_IDDD_/exec";
 
 const disable = {
   backgroundColor: "gray",
