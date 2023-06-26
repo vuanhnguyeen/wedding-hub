@@ -6,7 +6,7 @@ import Lightbox from "react-image-lightbox";
 import "react-image-lightbox/style.css";
 
 const Photos = React.memo((props) => {
-  const { data, hasVideo, play } = props;
+  const { data,dataL, hasVideo, play } = props;
   const [photoIndex, setPhotoIndex] = useState(0);
   const [isOpen, setIsOpen] = useState(false);
 
@@ -66,15 +66,15 @@ const Photos = React.memo((props) => {
       <div>
         {isOpen && (
           <Lightbox
-            mainSrc={data[photoIndex].src}
-            nextSrc={data[(photoIndex + 1) % data.length].src}
-            prevSrc={data[(photoIndex + data.length - 1) % data.length].src}
+            mainSrc={dataL[photoIndex].src}
+            nextSrc={dataL[(photoIndex + 1) % dataL.length].src}
+            prevSrc={dataL[(photoIndex + dataL.length - 1) % dataL.length].src}
             onCloseRequest={() => setIsOpen(false)}
             onMovePrevRequest={() =>
-              setPhotoIndex((photoIndex + data.length - 1) % data.length)
+              setPhotoIndex((photoIndex + dataL.length - 1) % dataL.length)
             }
             onMoveNextRequest={() =>
-              setPhotoIndex((photoIndex + data.length + 1) % data.length)
+              setPhotoIndex((photoIndex + dataL.length + 1) % dataL.length)
             }
             enableZoom
           />

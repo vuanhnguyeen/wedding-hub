@@ -80,7 +80,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Anh Vũ & Mỹ Anh</title>
+        <title>Minh Thi & Văn Ý</title>
         <meta name="description" content="Wedding Page" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
@@ -104,24 +104,6 @@ export default function Home() {
         <div id="notebook"></div>
         <Notebook />
         <Thanks />
-        {playYoutube ? (
-          <div style={overlay}>
-            <div style={stylesYoutube}>
-              <span style={close} onClick={handleClickCloseYoutube}>&#10006;</span>
-              <iframe
-                src={"https://www.youtube.com/embed/1qLC73si6bQ"}
-                frameBorder={0}
-                allowfullscreen="allowfullscreen"
-                msallowfullscreen="msallowfullscreen"
-                oallowfullscreen="oallowfullscreen"
-                webkitallowfullscreen="webkitallowfullscreen"
-                width="100%"
-                height="100%"
-                title="video"
-              />
-            </div>
-          </div>
-        ) : null}
       </main>
     </>
   );

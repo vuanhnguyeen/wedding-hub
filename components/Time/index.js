@@ -20,7 +20,7 @@ const Hero = () => {
             <div className={styles.bl_savedate_content}>
               <h2 className={styles.savedatetext}>Lưu ngày cưới</h2>
               <div className={styles.text1}>Cho đám cưới của</div>
-              <div className={styles.text2}>Anh Vũ & Mỹ Anh</div>
+              <div className={styles.text2}>Minh Thi & Văn Ý</div>
               <div className={styles.text1}>
                 Một lời chúc của anh/chị/bạn<br /> sẽ làm cho đám cưới của
                 chúng em<br />có thêm một niềm hạnh phúc 💝

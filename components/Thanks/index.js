@@ -1,6 +1,6 @@
 import React, { use, useState } from "react";
 import styles from "./styles.module.scss";
-import thanks from "../../public/thanks.jpg";
+import thanks from "../../public/thanks.jpeg";
 import Image from "next/image";
 
 const Thanks = () => {

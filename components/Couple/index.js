@@ -10,7 +10,7 @@ const Couple = () => {
       <div className={styles.couplesection}>
         <h2 className={styles.textcouple}>Chú rể & Cô dâu</h2>
         <div className={styles.quote}>
-          <span style={{ fontSize: "20px" }}>❝</span> Cuộc đời mỗi người đẹp
+          <span style={{ fontSize: "22px" }}>❝</span> Cuộc đời mỗi người đẹp
           nhất là thời thanh xuân và càng đẹp hơn khi thời thanh xuân ấy xuất
           hiện bóng hình để ta nhung nhớ và yêu thương...
         </div>
@@ -21,8 +21,9 @@ const Couple = () => {
                 <div className={styles.img1}></div>
               </div>
             </div>
-            <div className={styles.name_cou}>Nguyễn Anh Vũ</div>
-            <div className={styles.name_sub}>Thứ nam</div>
+            <div className={styles.name_cou}>Hà Thị Minh Thi</div>
+            <div className={styles.name_sub}>Trưởng nữ</div>
+
           </div>
           <div className={styles.heart}>
             <Image src={heart} alt="" width={70} height={70} />
@@ -33,9 +34,8 @@ const Couple = () => {
                 <div className={styles.img2}></div>
               </div>
             </div>
-
-            <div className={styles.name_cou}>Trần Thị Mỹ Anh</div>
-            <div className={styles.name_sub}>Thứ nữ</div>
+            <div className={styles.name_cou}>Nguyễn Văn Ý</div>
+            <div className={styles.name_sub}>Trưởng nam</div>
           </div>
         </div>
       </div>

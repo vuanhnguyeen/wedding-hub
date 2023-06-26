@@ -11,7 +11,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   @include desktop() {
-    background-image: url("../../public/hero.jpg");
+    background-image: url("../../public/hero.jpeg");
   }
 }
 .ctndate {

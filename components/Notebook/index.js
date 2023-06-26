@@ -6,8 +6,7 @@ import flowertemp from "../../public/flowertemp.png";
 import Image from "next/image";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-const domain =
-  "https://script.google.com/macros/s/_IDDD_/exec";
+const domain = "https://script.google.com/macros/s/AKfycbx3ZP6SKB6Qs6Ph0Nw8UZeeb0O4TLWQi5qsoHB8DInSk74GD7Wd3bPOXrUtveYtwDlECQ/exec"
 
 const disable = {
   backgroundColor: "gray",
